@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+const object1 = {             //references in object(to storing a one variable into another variable)example:object2=object1
+    message: 'good job!',
+};
+const object2=object1;
+console.log(object1);
+
+const object3={
+    item: 'books',
+    message: 'good job'
+};
+const object4=object3;
+console.log(object3===object3);
+
+//destructuring shortcut method for objects
+
+const object5={
+    message:'good morning!'
+};
+const {message}=object5;
+console.log(message) 
+const book=object5.message;
+console.log(book)
+
+const object6={
+    message,
+    method(){
+        console.log('Hii suriya!');
+    }
+}
+object6.method();
+console.log(object6);
+
+
+</script>
+</body>
+</html>
