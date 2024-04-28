@@ -14,16 +14,6 @@
         <div class="section1-container d-flex flex-row justify-content-center">
             <header>
                 <h2 class="logo">Logo</h2>
-                <?php 
-                session_start();
-                if (isset($_SESSION['loggedin']) && $_SESSION ['loggedin'] === true): 
-                ?>
-                <!-- User is logged in, show the Start button -->
-                <button class="reset-score-button" onclick="display('sectioninner')">START</button>
-                <?php else: ?>
-                    <!-- User is not logged in, don't show the Start button -->
-                    <!-- Optionally, show login form or a message indicating the user needs to log in -->
-                <?php endif; ?>
                 <nav class="navigation">
                     <a href="#">Home</a>
                     <a href="#">About</a>
